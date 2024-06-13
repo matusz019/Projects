@@ -1,5 +1,6 @@
 package com.example.gymapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -30,6 +31,9 @@ class MainActivity : AppCompatActivity() {
             val username = usernameInput.text.toString()
             val pass = passwordInput.text.toString()
             Log.i("Test Credentials", "Username : $username and Password : $pass")
+            val intent = Intent(this, LandingPage::class.java)
+            intent.putExtra("USERNAME", username)
+            startActivity(intent)
         }
 
 
