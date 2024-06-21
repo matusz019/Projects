@@ -14,12 +14,14 @@
         tools:ignore="UselessParent">
 
         <TextView
+            android:id="@+id/resultTextView"
             android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:text="Hello World!"
-            android:textSize="32sp"
+            android:layout_height="250dp"
+            android:hint="0"
+            android:textSize="60sp"
             android:textAlignment="textEnd"
-            android:gravity="end|bottom"/>
+            android:gravity="end|bottom"
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
